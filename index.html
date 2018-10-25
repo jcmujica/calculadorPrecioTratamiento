@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<label for="rate">Ingrese el valor del dólar</label>
+		<input class="rate" id="rate" type="text">
+		<button class="calculations" id="calculations" onclick="calculations()">Calcular</button>
+	</div>
+	<table id="tabla">
+	  <tr>
+	    <th>Tratamiento</th>
+	    <th>BsS</th>
+	    <th>BsF</th>
+	  </tr>
+	  <tr>
+	    <td>Examen Clínico General</td>
+	    <td><div id="trata1"></div></td>
+	    <td><div id="bsf1"></div></td>
+	  </tr>
+	  <tr>
+	    <td>Examen Clínico Especialista</td>
+	    <td><div id="trata2"></div></td>
+	    <td><div id="bsf2"></div></td>
+	  </tr>
+	  <tr>
+	    <td>Consulta Sucesiva de Ortodoncia</td>
+	    <td><div id="trata3"></div></td>
+	    <td><div id="bsf3"></div></td>
+	  </tr>
+	  <tr>
+	    <td>Emergencias (Sin aditamentos)</td>
+	    <td><div id="trata4"></div></td>
+	    <td><div id="bsf4"></div></td>
+	  </tr>
+	  <tr>
+	    <td>Reposición con brackets nuevos</td>
+	    <td><div id="trata5"></div></td>
+	    <td><div id="bsf5"></div></td>
+	  </tr>
+	  <tr>
+	    <td>Reposición de brackets (solo pegado)</td>
+	    <td><div id="trata6"></div></td>
+	    <td><div id="bsf6"></div></td>
+	  </tr>
+	  <tr>
+	    <td>Cambio de mecánica de tratamiento (cambio de arco) superior o inferior</td>
+	    <td><div id="trata7"></div></td>
+	    <td><div id="bsf7"></div></td>
+	  </tr>
+	  <tr>
+	    <td>Toma de impresión con alginato</td>
+	    <td><div id="trata8"></div></td>
+	    <td><div id="bsf8"></div></td>
+	  </tr>
+	  <tr>
+	    <td>Vaciado de modelo en yeso</td>
+	    <td><div id="trata9"></div></td>
+	    <td><div id="bsf9"></div></td>
+	  </tr>
+	  <tr>
+	    <td>Tartretomia simple p-sesión</td>
+	    <td><div id="trata10"></div></td>
+	    <td><div id="bsf10"></div></td>
+	  </tr>
+	  <tr>
+	    <td>Tartretomia compleja p-sesión</td>
+	    <td><div id="trata11"></div></td>
+	    <td><div id="bsf11"></div></td>
+	  </tr>
+	  <tr>
+	    <td>Retiro de brackets incluyendo profilaxis</td>
+	    <td><div id="trata12"></div></td>
+	    <td><div id="bsf12"></div></td>
+	  </tr>
+	  <tr>
+	    <td>Retenedor removible cada uno</td>
+	    <td><div id="trata13"></div></td>
+	    <td><div id="bsf13"></div></td>
+	  </tr>
+	  <tr>
+	    <td>Retenedor fijo </td>
+	    <td><div id="trata14"></div></td>
+	    <td><div id="bsf14"></div></td>
+	  </tr>
+	  <tr>
+	    <td>Botón de nance, erradicor de hábito</td>
+	    <td><div id="trata15"></div></td>
+	    <td><div id="bsf15"></div></td>
+	  </tr>
+	  <tr>
+	    <td>Clareamiento Dental</td>
+	    <td><div id="trata16"></div></td>
+	    <td><div id="bsf16"></div></td>
+	  </tr>
+	  <tr>
+	    <td>Honorarios clareamiento sin material p/sesión</td>
+	    <td><div id="trata17"></div></td>
+	    <td><div id="bsf17"></div></td>
+	  </tr>
+	  <tr>
+	    <td>Inicial de tratamiento ortodóntico básico inicial</td>
+	    <td><div id="trata18"></div></td>
+	    <td><div id="bsf18"></div></td>
+	  </tr>
+	  <tr>
+	    <td>Exodoncias</td>
+	    <td><div id="trata19"></div></td>
+	    <td><div id="bsf19"></div></td>
+	  </tr>
+	  <tr>
+	    <td>Exodoncias de semi-incluido, incluidos o retenidos</td>
+	    <td><div id="trata20"></div></td>
+	    <td><div id="bsf20"></div></td>
+	  </tr>
+	  <tr>
+	    <td>Restauraciones con resina simple</td>
+	    <td><div id="trata21"></div></td>
+	    <td><div id="bsf21"></div></td>
+	  </tr>
+	  <tr>
+	    <td>Restauraciones de resinas complejas o molares</td>
+	    <td><div id="trata22"></div></td>
+	    <td><div id="bsf22"></div></td>
+	  </tr>
+	  <tr>
+	    <td>Restauraciones tipo carillas de resina a partir de</td>
+	    <td><div id="trata23"></div></td>
+	    <td><div id="bsf23"></div></td>
+	  </tr>
+	  <tr>
+	    <td>Tratamiento endodontico monoradicular</td>
+	    <td><div id="trata24"></div></td>
+	    <td><div id="bsf24"></div></td>
+	  </tr>
+	  <tr>
+	    <td>Tratamiento endodontico multiradicular premolar</td>
+	    <td><div id="trata25"></div></td>
+	    <td><div id="bsf25"></div></td>
+	  </tr>
+	  <tr>
+	    <td>Tratamiento endodontico multiradicular molares</td>
+	    <td><div id="trata26"></div></td>
+	    <td><div id="bsf26"></div></td>
+	  </tr>
+	  <tr>
+	    <td>Pulpotomía p/sesión</td>
+	    <td><div id="trata27"></div></td>
+	    <td><div id="bsf27"></div></td>
+	  </tr>
+	</table>
+
+
+
+	<script src="script.js"></script>
+</body>
+</html>
